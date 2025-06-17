@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat code coverage">
+        <Configuration>
+          <Format>opencover</Format>
+          <Exclude>
+			  [*]*Migrations*
+			  [*]*Migration
+			  [*]*ModelSnapshot
+			  [Thunders.TechTest.ApiService]*Migrations*
+			  [Thunders.TechTest.ApiService]*.Migrations.*
+			  <ModulePath>.*\\Thunders\.TechTest\.ApiService\.dll</ModulePath>
+			  <SourceFiles>.*\\Migrations\\.*</SourceFiles>
+			  <Type>.*Migrations.*</Type>
+          </Exclude>
+          <ExcludeByFile>
+            **/Migrations/**
+            **/Migrations/*.cs
+            **/*Migration*.cs
+            **/*ModelSnapshot*.cs
+          </ExcludeByFile>
+          <ExcludeByAttribute>
+            Obsolete
+            GeneratedCodeAttribute
+            CompilerGeneratedAttribute
+            ExcludeFromCodeCoverageAttribute
+          </ExcludeByAttribute>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings> 

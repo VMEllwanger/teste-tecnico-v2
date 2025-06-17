@@ -1,0 +1,18 @@
+{
+  "exclude": [
+    "[*]*Migrations*",
+    "[*]*Migration",
+    "[*]*ModelSnapshot*"
+  ],
+  "excludebyfile": [
+    "**/Migrations/**",
+    "**/Migrations/*.cs",
+    "**/*Migration*.cs",
+    "**/*ModelSnapshot*.cs"
+  ],
+  "excludebyattribute": [
+    "ExcludeFromCodeCoverageAttribute",
+    "GeneratedCodeAttribute",
+    "CompilerGeneratedAttribute"
+  ]
+}

@@ -1,5 +1,8 @@
-﻿namespace Thunders.TechTest.ApiService
+using System.Diagnostics.CodeAnalysis;
+
+namespace Thunders.TechTest.ApiService
 {
+    [ExcludeFromCodeCoverage]
     public class Features
     {
         public required bool UseMessageBroker { get; set; }
